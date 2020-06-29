@@ -39,10 +39,15 @@ Moreover, to include never video codecs, we developed a [codec extension](https:
 
 ## Additional Software
 During development of the described models, we conducted several subjective video quality tests.
+And performed analysis with othe state of the art video quality metrics.
 
 ### avrateNG
 To run such a test, we use [avrateNG](https://github.com/Telecommunication-Telemedia-Assessment/avrateNG).
 It is a video, image, and general multimedia rating system, based on a  web interface (server client architecture).
+
+### cencro
+[Cencro](https://github.com/Telecommunication-Telemedia-Assessment/cencro) is a center cropped variant of Netflix's VMAF, that we used to compare our models during the development.
+
 
 ## Who are we?
 The [Audiovisual Technology Group group](https://www.tu-ilmenau.de/en/audio-visual-technology/) is part of the Institute of Media Technology at TU Ilmenau, Germany, headed by Prof. Alexander Raake.
