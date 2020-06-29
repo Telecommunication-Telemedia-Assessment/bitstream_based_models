@@ -27,7 +27,7 @@ ITU-T Rec. P.1203 is the world’s first standard for measuring the Quality of E
 The standard is accessible [here](https://www.itu.int/rec/T-REC-P.1203).
 
 #### Reference Software
-We developed an implementation of the [ITU-T Rec. P.1203 standard](https://github.com/itu-p1203/itu-p1203).
+We developed a reference implementation of the [ITU-T Rec. P.1203 standard](https://github.com/itu-p1203/itu-p1203).
 
 
 ### Open Dataset
