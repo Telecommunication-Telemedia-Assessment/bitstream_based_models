@@ -77,7 +77,7 @@ The Audiovisual Technology Group (AVT) deals with the function, application and 
 * Werner Robitza, Steve Göring, Alexander Raake, David Lindegren, Gunnar Heikkil&#228;, Jörgen Gustafsson, Peter List, Bernhard Feiten, Ulf Wüstenhagen, Marie-Neige Garcia, Kazuhisa Yamagishi, and Simon Broom. **"HTTP Adaptive Streaming QoE Estimation with ITU-T Rec. P.1203 -- Open Databases and Software."** _9th ACM Multimedia Systems Conference_. Amsterdam. 2018. [[url]](https://www.researchgate.net/publication/325780595_HTTP_adaptive_streaming_QoE_estimation_with_ITU-T_rec_P_1203_open_databases_and_software)
 
 
-* Werner Robitza, Dhananjaya G. Kittur, Alexander M. Dethof, Steve Göring, Bernhard Feiten and Alexander Raake. **"Measuring YouTube QoE with ITU-T P. 1203 under Constrained Bandwidth Conditions."** _Tenth International Conference on Quality of Multimedia Experience (QoMEX)_. IEEE. 2018. [[ulr]](https://www.researchgate.net/publication/325780662_Measuring_YouTube_QoE_with_ITU-T_P1203_under_Constrained_Bandwidth_Conditions)
+* Werner Robitza, Dhananjaya G. Kittur, Alexander M. Dethof, Steve Göring, Bernhard Feiten and Alexander Raake. **"Measuring YouTube QoE with ITU-T P. 1203 under Constrained Bandwidth Conditions."** _Tenth International Conference on Quality of Multimedia Experience (QoMEX)_. IEEE. 2018. [[url]](https://www.researchgate.net/publication/325780662_Measuring_YouTube_QoE_with_ITU-T_P1203_under_Constrained_Bandwidth_Conditions)
 
 ### 2017
 
