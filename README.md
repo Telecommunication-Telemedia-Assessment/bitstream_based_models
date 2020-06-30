@@ -85,4 +85,4 @@ The Audiovisual Technology Group (AVT) deals with the function, application and 
 
 * Alexander Raake, Marie-Neige Garcia, Werner Robitza, Peter List, Steve Göring and Bernhard Feiten. **"A bitstream-based, scalable video-quality model for HTTP adaptive streaming: ITU-T P.1203.1."** _Ninth International Conference on Quality of Multimedia Experience (QoMEX)_. May 2017. [[url]](https://www.researchgate.net/publication/317368539_A_bitstream-based_scalable_video-quality_model_for_HTTP_adaptive_streaming_ITU-T_P12031)
 
-* Robitza, Werner, Marie-Neige Garcia, and Alexander Raake. **"A modular HTTP adaptive streaming QoE model - Candidate for ITU-T P. 1203 (''P. NATS')."** _Ninth International Conference on Quality of Multimedia Experience (QoMEX)_. IEEE, 2017.[[url]](https://ieeexplore.ieee.org/iel7/7958434/7965624/07965689.pdf)
+* Robitza, Werner, Marie-Neige Garcia, and Alexander Raake. **"A modular HTTP adaptive streaming QoE model - Candidate for ITU-T P. 1203 (''P. NATS')."** _Ninth International Conference on Quality of Multimedia Experience (QoMEX)_. IEEE, 2017. [[url]](https://ieeexplore.ieee.org/iel7/7958434/7965624/07965689.pdf)
