@@ -21,6 +21,15 @@ $white: #FFFFFF;
     h1, h2, h3, h4 {
         color: $violet;
     }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+    figcaption {
+        text-align:center;
+    }
 }
 
 a {
