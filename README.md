@@ -3,7 +3,7 @@ We developed several video quality models that are using bitstream-based data to
 
 <figure>
   <img src="./assets/imgs/pnats_phase2.svg" alt="pnats overall structure"/>
-  <figcaption>Overall P.1203 and P.1204 Structure.</figcaption>
+  <figcaption>Overall P.1203 and P.1204 structure. Here, the P.1204 models are complementary to the Pv-module, P.1203.1, and provide short-term video-quality estimations. The P.1204.3 model developed by our group is bitstream-based, like the P.1203.1 Pv-module, as described further below.</figcaption>
 </figure>
 
 
