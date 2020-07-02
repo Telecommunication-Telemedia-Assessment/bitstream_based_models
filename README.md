@@ -36,7 +36,7 @@ P.1203 comprises three modules:
 
 The accompanying general standard document that outlines the application scope and other more general features of P.1203 is available as [ITU-T Rec. P.1203](https://www.itu.int/rec/T-REC-P.1203).
 
-Related scientific publications from our group describing specific model components are [(Raake et al., IEEE QoMEX 2017)](https://www.researchgate.net/publication/317368539_A_bitstream-based_scalable_video-quality_model_for_HTTP_adaptive_streaming_ITU-T_P12031) (scalable video-quality model for different type of input information) and [(Robitza et al., ACM MMSys 2018)](https://www.researchgate.net/publication/325780662_Measuring_YouTube_QoE_with_ITU-T_P1203_under_Constrained_Bandwidth_Conditions) (open source implementation for P.1203, see below).
+Related scientific publications from our group describing specific model components are [(Raake et al., IEEE QoMEX 2017)](https://www.researchgate.net/publication/317368539_A_bitstream-based_scalable_video-quality_model_for_HTTP_adaptive_streaming_ITU-T_P12031) (scalable video-quality model for different types of input information) and [(Robitza et al., ACM MMSys 2018)](https://www.researchgate.net/publication/325780662_Measuring_YouTube_QoE_with_ITU-T_P1203_under_Constrained_Bandwidth_Conditions) (open source implementation for P.1203, see below).
 
 #### Reference Software
 We developed a reference implementation of the [ITU-T Rec. P.1203 standard](https://github.com/itu-p1203/itu-p1203).
