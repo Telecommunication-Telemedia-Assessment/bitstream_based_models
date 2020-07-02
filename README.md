@@ -2,9 +2,13 @@
 We developed several video quality models that are using bitstream-based data to predict subjective video/audiovisual quality in the context of video streaming using HAS (HTTP-based adaptive streaming), such as MPEG-DASH (Dynamic Adaptive Streaming over HTTP).
 
 ## ITU-T P.1204.3
-ITU-T P.1204.3 is part of ITU-T P.1204, considering UHD-1/4K short-term video quality. ITU-T P.1204.3 is a short-term video quality prediction model that uses full bitstream data to estimate video quality scores.
+[ITU-T P.1204.3](https://www.itu.int/rec/T-REC-P.1204.3/en) is part of [ITU-T P.1204](https://www.itu.int/rec/T-REC-P.1204), a set of video-quality models developed for up to UHD-1/4K resolution. ITU-T P.1204.3 is a short-term video quality prediction model that uses full bitstream data to estimate video-quality scores.
 
-It provides two outputs: (1) A score at segment level, for an input bitstream of a video between 5 to 10 sec duration, on a 5-point scale [1,5], reflecting the Mean Opinion Score (MOS) collected from more than 600 subjects in a series of laboratory tests on almost 5,000 video sequences. These quality tests were carried out during the so-called P.NATS Phase 2 competition conducted within ITU-T's Question Q14, Study Group 12, in collaboration with the Video Quality Experts Group (VQEG). (2) A per-1-sec video-quality score that can be used for longer-term quality or QoE integraction, following the model architecture of ITU-T Rec. P.1203 (see below). 
+It provides two outputs: 
+
+1. A score at segment level, for an input bitstream of a video between 5 to 10 sec duration, on a 5-point scale [1,5], reflecting the Mean Opinion Score (MOS) collected from more than 600 subjects in a series of laboratory tests on almost 5,000 video sequences. These quality tests were carried out during the so-called P.NATS Phase 2 competition conducted within ITU-T's Question Q14, Study Group 12, in collaboration with the Video Quality Experts Group (VQEG). 
+
+2. A per-1-sec video-quality score that can be used for longer-term quality or QoE integraction, following the model architecture of [ITU-T Rec. P.1203](https://www.itu.int/rec/T-REC-P.1203) (see details below). 
 
 The P.1204.3 standard is accessible [here](https://www.itu.int/rec/T-REC-P.1204.3/en).
 
@@ -21,7 +25,7 @@ We further published a large scale [Video Quality Database for UHD-1](https://gi
 We used this database for a complementary evaluation of the ITU-T P.1204.3 model, besides the validation during the P.1204 standard development, see [(Rao et al., IEEE QoMEX 2020)](https://www.researchgate.net/publication/341792225_Bitstream-based_Model_Standard_for_4KUHD_ITU-T_P12043_-_Model_Details_Evaluation_Analysis_and_Open_Source_Implementation).
 
 ## ITU-T P.1203
-ITU-T Rec. P.1203 is the world’s first standard for measuring the Quality of Experience of HTTP Adaptive Streaming services for longer viewing sessions between 1 and 5 min duration. 
+[ITU-T Rec. P.1203](https://www.itu.int/rec/T-REC-P.1203) is the world’s first standard for measuring the Quality of Experience of HTTP Adaptive Streaming services for longer viewing sessions between 1 and 5 min duration. 
 
 P.1203 comprises three modules: 
 1. Short-term video-quality module Pv ("P" for "prediction"; [ITU-T Rec. P.1203.1](https://www.itu.int/rec/T-REC-P.1203.1/en)), providing per-1-sec video-quality scores on the aforementioned 5-point "MOS scale". The bitstream model is available in different "Modes" that take input information of different complexity, depending on what is available to a corresponding probe. Input information ranges from metadata such as audio codec used, video resolution and framerate, audio and video bitrate (Mode 0) over information about encoded frame type and size (Mode 1) to frame-type specific QP information available from full access to the bitstream (Modes 2 and 3). The Pv model was initially developed for H.264/MPEG-4 AVC encoding. 
