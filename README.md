@@ -2,7 +2,7 @@
 We developed several video quality models that are using bitstream-based data to predict subjective video/audiovisual quality in the context of video streaming using HAS (HTTP-based adaptive streaming), such as MPEG-DASH (Dynamic Adaptive Streaming over HTTP).
 
 <figure>
-  <img src="{{site.url}}/assets/imgs/pnats_phase2.svg" alt="pnats overall structure"/>
+  <img src="/assets/imgs/pnats_phase2.png" alt="pnats overall structure"/>
   <figcaption>Overall P.1203 and P.1204 Structure.</figcaption>
 </figure>
 
