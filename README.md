@@ -1,5 +1,5 @@
 # ITU-T P.1203 and P.1204 model and development
-We developed several video quality models that are using bitstream-based data to predict subjective video/audiovisual quality in the context of video streaming using HAS (HTTP-based adaptive streaming), such as MPEG-H DASH (Dynamic Adaptive Streaming over HTTP).
+We developed several video quality models that are using bitstream-based data to predict subjective video/audiovisual quality in the context of video streaming using HAS (HTTP-based adaptive streaming), such as MPEG-DASH (Dynamic Adaptive Streaming over HTTP).
 
 ## ITU-T P.1204.3
 ITU-T P.1204.3 is part of ITU-T P.1204, considering UHD-1/4K short-term video quality. ITU-T P.1204.3 is a short-term video quality prediction model that uses full bitstream data to estimate video quality scores.
