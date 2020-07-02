@@ -1,56 +1,55 @@
 # ITU-T P.1203 and P.1204 model and development
-We developed several video quality models that are using bitstream based data to predict subjective video/audiovisual quality in the context of DASH/HAS based video streaming.
+We developed several video quality models that are using bitstream-based data to predict subjective video/audiovisual quality in the context of video streaming using HAS (HTTP-based adaptive streaming), such as MPEG-H DASH (Dynamic Adaptive Streaming over HTTP).
 
 ## ITU-T P.1204.3
-ITU-T P.1204.3 is part of ITU-T P.1204, considering UHD-1/4K short term video quality.
+ITU-T P.1204.3 is part of ITU-T P.1204, considering UHD-1/4K short-term video quality. ITU-T P.1204.3 is a short-term video quality prediction model that uses full bitstream data to estimate video quality scores.
 
-The standard is accessible [here](https://www.itu.int/rec/T-REC-P.1204.3/en).
+It provides two outputs: (1) A score at segment level, for an input bitstream of a video between 5 to 10 sec duration, on a 5-point scale [1,5], reflecting the Mean Opinion Score (MOS) collected from more than 600 subjects in a series of laboratory tests on almost 5,000 video sequences. These quality tests were carried out during the so-called P.NATS Phase 2 competition conducted within ITU-T's Question Q14, Study Group 12, in collaboration with the Video Quality Experts Group (VQEG). (2) A per-1-sec video-quality score that can be used for longer-term quality or QoE integraction, following the model architecture of ITU-T Rec. P.1203 (see below). 
+
+The P.1204.3 standard is accessible [here](https://www.itu.int/rec/T-REC-P.1204.3/en).
 
 ### Reference Implementation
-Open source reference implementation of [ITU-T P.1204.3](https://github.com/Telecommunication-Telemedia-Assessment/bitstream_mode3_p1204_3).
-ITU-T P.1204.3 is a short term video quality prediction model that uses full bitstream data to estimate video quality scores on a segment level.
-
+We have created an open-source reference implementation that is now available for [ITU-T P.1204.3](https://github.com/Telecommunication-Telemedia-Assessment/bitstream_mode3_p1204_3).
+The model and its evaluation are described in an accompanying conference paper, see (Rao et al., IEEE QoMEX 2020).
 
 ### Mode 3 Video Parser
-To run the reference implementation a [bitstream paser](https://github.com/Telecommunication-Telemedia-Assessment/bitstream_mode3_videoparser) is required, we also open sourced this.
-This bitstream parser can be used for H.264, H.265 and VP9 encoded videos, and it will extract beside QP values additional statistics derived from the bitstream.
-
+To run the reference implementation, a [bitstream parser](https://github.com/Telecommunication-Telemedia-Assessment/bitstream_mode3_videoparser) is required, which is also available open source.
+This bitstream parser can be used for H.264, H.265 and VP9 encoded videos. It extracts a number of features from the bitstream, such as QP-values and statistics about motion vectors and transform coefficients.
 
 ### Open Access Video Quality Test Dataset -- AVT-VQDB-UHD-1
-We further published a large scale [Video Quality Database for UHD-1](https://github.com/Telecommunication-Telemedia-Assessment/AVT-VQDB-UHD-1), subjective data and videos can be downloaded.
-We used it to validate the ITU-T P.1204.3 model independently.
-
+We further published a large scale [Video Quality Database for UHD-1](https://github.com/Telecommunication-Telemedia-Assessment/AVT-VQDB-UHD-1), and subjective data as well as most of the used videos can be downloaded. The database is described in (Rao et al., IEEE ISM 2019).
+We used this database for a complementary evaluation of the ITU-T P.1204.3 model, besides the validation during the P.1204 standard development, see (Rao et al., IEEE QoMEX 2020).
 
 ## ITU-T P.1203
-ITU-T Rec. P.1203 is the world’s first standard for measuring the Quality of Experience of HTTP Adaptive Streaming services.
+ITU-T Rec. P.1203 is the world’s first standard for measuring the Quality of Experience of HTTP Adaptive Streaming services for longer viewing sessions between 1 and 5 min duration. It comprises three modules: (1) Short-term video-quality module Pv ("P" for "prediction"; ITU-T Rec. P.1203.1), providing per-1-sec video-quality scores on the aforementioned 5-point "MOS scale". The bitstream model is available in different "Modes" that take input information of different complexity, depending on what is available to a corresponding probe. Input information ranges from metadata such as audio codec used, video resolution and framerate, audio and video bitrate (Mode 0) over information about encoded frame type and size (Mode 1) to frame-type specific QP information available from full access to the bitstream (Modes 2 and 3). The Pv model was initially developed for H.264/MPEG-4 AVC encoding. (2) Short-term audio-quality module Pa (ITU-T Rec. P.1203.2), delivering per-1-sec audio-quality scores on the 5-point "MOS scale". The audio-quality module can handle a variety of audio codecs and is based on metadata only ("Mode 0"). (3) Quality integration module Pq (ITU-T Rec. P.1203.2), delivering (a) a per-1-sec audiovisual quality score, (b) an integral audiovisual quality score for the complete session addressed, and (c) as main output an integral session quality score, reflecting the Quality of Experience (QoE) resulting from audio and video quality as well as typical adaptive-streaming related factors such as quality-adaptation and hence visible / audible switches, the initial loading delay at the beginning of a session and possible stalling events that occur when the playout buffer has depleted.
 
 The standard is accessible [here](https://www.itu.int/rec/T-REC-P.1203).
 
+Related scientific publications from our group describing specific model components are (Raake et al., IEEE QoMEX 2017) and (Robitza et al., ACM MMSys 2018).
+
 #### Reference Software
 We developed a reference implementation of the [ITU-T Rec. P.1203 standard](https://github.com/itu-p1203/itu-p1203).
-
+It is described in (Robitza et al., ACM MMSys 2018).
 
 ### Open Dataset
-An [open dataset](https://github.com/itu-p1203/open-dataset) was created for the ITU-T P.1203 model, which contains training and validation databases from the standardization procedure.
+An [open dataset](https://github.com/itu-p1203/open-dataset) was created for the ITU-T P.1203 model, which contains training and validation databases from the standardization procedure. The database is described in (Robitza et al., ACM MMSys 2018) together with the open-source model implementation.
 
-### Codec Extension
-Moreover, to include never video codecs, we developed a [codec extension](https://github.com/Telecommunication-Telemedia-Assessment/itu-p1203-codecextension) from our lab.
-
+### Codec Extensions
+Moreover, to include the complementary video codecs H.265/MPEG-H HEVC and VP9, we developed a [codec extension](https://github.com/Telecommunication-Telemedia-Assessment/itu-p1203-codecextension) for the Mode 0 part of P.1203.
 
 ## Additional Software
-During development of the described models, we conducted several subjective video quality tests.
-And performed analysis with othe state of the art video quality metrics.
+During development of the different bitstream models, we conducted several subjective video-quality tests.
+Further, we performed analyses with other state-of-the-art video-quality metrics and models.
 
 ### avrateNG
-To run such a test, we use [avrateNG](https://github.com/Telecommunication-Telemedia-Assessment/avrateNG).
-It is a video, image, and general multimedia rating system, based on a  web interface (server client architecture).
+To run a subjective test, we use our test-tool [avrateNG](https://github.com/Telecommunication-Telemedia-Assessment/avrateNG).
+It is a video, image, and general multimedia rating system, based on a  web interface (server-client architecture).
 
 ### cencro
-[Cencro](https://github.com/Telecommunication-Telemedia-Assessment/cencro) is a center cropped variant of Netflix's VMAF, that we used to compare our models during the development.
-
+[Cencro](https://github.com/Telecommunication-Telemedia-Assessment/cencro) is a center cropped variant of Netflix's VMAF (Video Multi-Method Assessment Fusion), that we used to compare our models during the development. With the center-cropping it can run significantly faster than the full-frame VMAF, with only slight decrease in prediction accuracy.
 
 ## Who are we?
-The [Audiovisual Technology Group group](https://www.tu-ilmenau.de/en/audio-visual-technology/) is part of the Institute of Media Technology at TU Ilmenau, Germany, headed by Prof. Alexander Raake.
+The [Audiovisual Technology Group](https://www.tu-ilmenau.de/en/audio-visual-technology/) is part of the Institute of Media Technology at TU Ilmenau, Germany, headed by Prof. Alexander Raake.
 The Audiovisual Technology Group (AVT) deals with the function, application and perception of audio and video equipment and systems.
 
 ## Publications
