@@ -10,15 +10,15 @@ The P.1204.3 standard is accessible [here](https://www.itu.int/rec/T-REC-P.1204.
 
 ### Reference Implementation
 We have created an open-source reference implementation that is now available for [ITU-T P.1204.3](https://github.com/Telecommunication-Telemedia-Assessment/bitstream_mode3_p1204_3).
-The model and its evaluation are described in an accompanying conference paper, see (Rao et al., IEEE QoMEX 2020).
+The model and its evaluation are described in an accompanying conference paper, see [(Rao et al., IEEE QoMEX 2020)](https://www.researchgate.net/publication/341792225_Bitstream-based_Model_Standard_for_4KUHD_ITU-T_P12043_-_Model_Details_Evaluation_Analysis_and_Open_Source_Implementation).
 
 ### Mode 3 Video Parser
 To run the reference implementation, a [bitstream parser](https://github.com/Telecommunication-Telemedia-Assessment/bitstream_mode3_videoparser) is required, which is also available open source.
-This bitstream parser can be used for H.264, H.265 and VP9 encoded videos. It extracts a number of features from the bitstream, such as QP-values and statistics about motion vectors and transform coefficients.
+This bitstream parser can be used for H.264, H.265 and VP9 encoded videos. It extracts a number of features from the bitstream, such as QP-values and statistics about motion vectors and transform coefficients. The bitstream parser is described in more detail in [(Rao et al., IEEE QoMEX 2020)](https://www.researchgate.net/publication/341792225_Bitstream-based_Model_Standard_for_4KUHD_ITU-T_P12043_-_Model_Details_Evaluation_Analysis_and_Open_Source_Implementation).
 
 ### Open Access Video Quality Test Dataset -- AVT-VQDB-UHD-1
-We further published a large scale [Video Quality Database for UHD-1](https://github.com/Telecommunication-Telemedia-Assessment/AVT-VQDB-UHD-1), and subjective data as well as most of the used videos can be downloaded. The database is described in (Rao et al., IEEE ISM 2019).
-We used this database for a complementary evaluation of the ITU-T P.1204.3 model, besides the validation during the P.1204 standard development, see (Rao et al., IEEE QoMEX 2020).
+We further published a large scale [Video Quality Database for UHD-1](https://github.com/Telecommunication-Telemedia-Assessment/AVT-VQDB-UHD-1), and subjective data as well as most of the used videos can be downloaded. The database is described in [(Rao et al., IEEE ISM 2019)](https://www.researchgate.net/publication/338201010_AVT-VQDB-UHD-1_A_Large_Scale_Video_Quality_Database_for_UHD-1).
+We used this database for a complementary evaluation of the ITU-T P.1204.3 model, besides the validation during the P.1204 standard development, see [(Rao et al., IEEE QoMEX 2020)](https://www.researchgate.net/publication/341792225_Bitstream-based_Model_Standard_for_4KUHD_ITU-T_P12043_-_Model_Details_Evaluation_Analysis_and_Open_Source_Implementation).
 
 ## ITU-T P.1203
 ITU-T Rec. P.1203 is the world’s first standard for measuring the Quality of Experience of HTTP Adaptive Streaming services for longer viewing sessions between 1 and 5 min duration. 
@@ -32,14 +32,14 @@ P.1203 comprises three modules:
 
 The standard is accessible [here](https://www.itu.int/rec/T-REC-P.1203).
 
-Related scientific publications from our group describing specific model components are (Raake et al., IEEE QoMEX 2017) and (Robitza et al., ACM MMSys 2018).
+Related scientific publications from our group describing specific model components are [(Raake et al., IEEE QoMEX 2017)](https://www.researchgate.net/publication/317368539_A_bitstream-based_scalable_video-quality_model_for_HTTP_adaptive_streaming_ITU-T_P12031) and [(Robitza et al., ACM MMSys 2018)](https://www.researchgate.net/publication/325780662_Measuring_YouTube_QoE_with_ITU-T_P1203_under_Constrained_Bandwidth_Conditions).
 
 #### Reference Software
 We developed a reference implementation of the [ITU-T Rec. P.1203 standard](https://github.com/itu-p1203/itu-p1203).
-It is described in (Robitza et al., ACM MMSys 2018).
+It is described in [(Robitza et al., ACM MMSys 2018)](https://www.researchgate.net/publication/325780662_Measuring_YouTube_QoE_with_ITU-T_P1203_under_Constrained_Bandwidth_Conditions).
 
 ### Open Dataset
-An [open dataset](https://github.com/itu-p1203/open-dataset) was created for the ITU-T P.1203 model, which contains training and validation databases from the standardization procedure. The database is described in (Robitza et al., ACM MMSys 2018) together with the open-source model implementation.
+An [open dataset](https://github.com/itu-p1203/open-dataset) was created for the ITU-T P.1203 model, which contains training and validation databases from the standardization procedure. The database is described in [(Robitza et al., ACM MMSys 2018)](https://www.researchgate.net/publication/325780662_Measuring_YouTube_QoE_with_ITU-T_P1203_under_Constrained_Bandwidth_Conditions) together with the open-source model implementation.
 
 ### Codec Extensions
 Moreover, to include the complementary video codecs H.265/MPEG-H HEVC and VP9, we developed a [codec extension](https://github.com/Telecommunication-Telemedia-Assessment/itu-p1203-codecextension) for the Mode 0 part of P.1203.
