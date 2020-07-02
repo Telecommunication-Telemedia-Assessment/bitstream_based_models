@@ -4,11 +4,11 @@ We developed several video quality models that are using bitstream-based data to
 ## ITU-T P.1204.3
 [ITU-T P.1204.3](https://www.itu.int/rec/T-REC-P.1204.3/en) is part of [ITU-T P.1204](https://www.itu.int/rec/T-REC-P.1204), a set of video-quality models developed for up to UHD-1/4K resolution. ITU-T P.1204.3 is a short-term video quality prediction model that uses full bitstream data to estimate video-quality scores.
 
-It provides two outputs: 
+It provides two outputs:
 
-1. A score at segment level, for an input bitstream of a video between 5 to 10 sec duration, on a 5-point scale [1,5], reflecting the Mean Opinion Score (MOS) collected from more than 600 subjects in a series of laboratory tests on almost 5,000 video sequences. These quality tests were carried out during the so-called P.NATS Phase 2 competition conducted within ITU-T's Question Q14, Study Group 12, in collaboration with the Video Quality Experts Group (VQEG). 
+1. A score at segment level, for an input bitstream of a video between 5 to 10 sec duration, on a 5-point scale [1,5], reflecting the Mean Opinion Score (MOS) collected from more than 600 subjects in a series of laboratory tests on almost 5,000 video sequences. These quality tests were carried out during the so-called P.NATS Phase 2 competition conducted within ITU-T's Question Q14, Study Group 12, in collaboration with the Video Quality Experts Group (VQEG).
 
-2. A per-1-sec video-quality score that can be used for longer-term quality or QoE integraction, following the model architecture of [ITU-T Rec. P.1203](https://www.itu.int/rec/T-REC-P.1203) (see details below). 
+2. A per-1-sec video-quality score that can be used for longer-term quality or QoE integraction, following the model architecture of [ITU-T Rec. P.1203](https://www.itu.int/rec/T-REC-P.1203) (see details below).
 
 The P.1204.3 standard is accessible [here](https://www.itu.int/rec/T-REC-P.1204.3/en).
 
@@ -25,12 +25,12 @@ We further published a large scale [Video Quality Database for UHD-1](https://gi
 We used this database for a complementary evaluation of the ITU-T P.1204.3 model, besides the validation during the P.1204 standard development, see [(Rao et al., IEEE QoMEX 2020)](https://www.researchgate.net/publication/341792225_Bitstream-based_Model_Standard_for_4KUHD_ITU-T_P12043_-_Model_Details_Evaluation_Analysis_and_Open_Source_Implementation).
 
 ## ITU-T P.1203
-[ITU-T Rec. P.1203](https://www.itu.int/rec/T-REC-P.1203) is the world’s first standard for measuring the Quality of Experience of HTTP Adaptive Streaming services for longer viewing sessions between 1 and 5 min duration. 
+[ITU-T Rec. P.1203](https://www.itu.int/rec/T-REC-P.1203) is the world’s first standard for measuring the Quality of Experience of HTTP Adaptive Streaming services for longer viewing sessions between 1 and 5 min duration.
 
-P.1203 comprises three modules: 
-1. Short-term video-quality module Pv ("P" for "prediction"; [ITU-T Rec. P.1203.1](https://www.itu.int/rec/T-REC-P.1203.1/en)), providing per-1-sec video-quality scores on the aforementioned 5-point "MOS scale". The bitstream model is available in different "Modes" that take input information of different complexity, depending on what is available to a corresponding probe. Input information ranges from metadata such as audio codec used, video resolution and framerate, audio and video bitrate (Mode 0) over information about encoded frame type and size (Mode 1) to frame-type specific QP information available from full access to the bitstream (Modes 2 and 3). The Pv model was initially developed for H.264/MPEG-4 AVC encoding. 
+P.1203 comprises three modules:
+1. Short-term video-quality module Pv ("P" for "prediction"; [ITU-T Rec. P.1203.1](https://www.itu.int/rec/T-REC-P.1203.1/en)), providing per-1-sec video-quality scores on the aforementioned 5-point "MOS scale". The bitstream model is available in different "Modes" that take input information of different complexity, depending on what is available to a corresponding probe. Input information ranges from metadata such as audio codec used, video resolution and framerate, audio and video bitrate (Mode 0) over information about encoded frame type and size (Mode 1) to frame-type specific QP information available from full access to the bitstream (Modes 2 and 3). The Pv model was initially developed for H.264/MPEG-4 AVC encoding.
 
-2. Short-term audio-quality module Pa [(ITU-T Rec. P.1203.2)](https://www.itu.int/rec/T-REC-P.1203.2/en), delivering per-1-sec audio-quality scores on the 5-point "MOS scale". The audio-quality module can handle a variety of audio codecs and is based on metadata only ("Mode 0"). 
+2. Short-term audio-quality module Pa [(ITU-T Rec. P.1203.2)](https://www.itu.int/rec/T-REC-P.1203.2/en), delivering per-1-sec audio-quality scores on the 5-point "MOS scale". The audio-quality module can handle a variety of audio codecs and is based on metadata only ("Mode 0").
 
 3. Quality integration module Pq [(ITU-T Rec. P.1203.2)](https://www.itu.int/rec/T-REC-P.1203.3/en), delivering (a) a per-1-sec audiovisual quality score, (b) an integral audiovisual quality score for the complete session addressed, and (c) as main output an integral session quality score, reflecting the Quality of Experience (QoE) resulting from audio and video quality as well as typical adaptive-streaming related factors such as quality-adaptation and hence visible / audible switches, the initial loading delay at the beginning of a session and possible stalling events that occur when the playout buffer has depleted.
 
@@ -71,7 +71,7 @@ The Audiovisual Technology Group (AVT) deals with the function, application and 
 
 * Rakesh Rao Ramachandra Rao, Steve Göring, Werner Robitza, Alexander Raake, Bernhard Feiten, Peter List, and Ulf Wüstenhagen. **"Bitstream-based Model Standard for 4K/UHD: ITU-T P.1204.3 -- Model Details, Evaluation, Analysis and Open Source Implementation."** _Twelfth International Conference on Quality of Multimedia Experience (QoMEX)_. Athlone, Ireland. May 2020. [[url]](https://www.researchgate.net/publication/341792225_Bitstream-based_Model_Standard_for_4KUHD_ITU-T_P12043_-_Model_Details_Evaluation_Analysis_and_Open_Source_Implementation)
 
-* Werner Robitza, Alexander M. Dethof, Steve Göring, Alexander Raake, Tim Polzehl, and Andre Beyer. **"Are You Still Watching? Streaming Video Quality and Engagement Assessment in the Crowd."** _Twelfth International Conference on Quality of Multimedia Experience (QoMEX)_. Athlone, Ireland. May 2020. [[url]]("https://www.researchgate.net/publication/341736567_Are_You_Still_Watching_Streaming_Video_Quality_and_Engagement_Assessment_in_the_Crowd")
+* Werner Robitza, Alexander M. Dethof, Steve Göring, Alexander Raake, Tim Polzehl, and Andre Beyer. **"Are You Still Watching? Streaming Video Quality and Engagement Assessment in the Crowd."** _Twelfth International Conference on Quality of Multimedia Experience (QoMEX)_. Athlone, Ireland. May 2020. [[url]](https://www.researchgate.net/publication/341736567_Are_You_Still_Watching_Streaming_Video_Quality_and_Engagement_Assessment_in_the_Crowd)
 
 ### 2019
 
