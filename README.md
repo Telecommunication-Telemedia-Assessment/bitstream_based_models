@@ -77,7 +77,7 @@ The Audiovisual Technology Group (AVT) deals with the function, application and 
 
 ### 2020
 
-* Rakesh Rao Ramachandra Rao, Steve Göring, Robert Steger, Saman Zadtootaghaj, Nabajeet Barman, Stephan Fremerey, Sebastian Möller and Alexander Raake. **“A Large-scale Evaluation of the bitstream-based video-quality model ITU-T P.1204.3 on Gaming Content”** _22nd International Workshop on Multimedia Signal Processing (MMSP), IEEE_. Tampere, Finland. Sep 2020
+* Rakesh Rao Ramachandra Rao, Steve Göring, Robert Steger, Saman Zadtootaghaj, Nabajeet Barman, Stephan Fremerey, Sebastian Möller and Alexander Raake. **“A Large-scale Evaluation of the bitstream-based video-quality model ITU-T P.1204.3 on Gaming Content.”** _22nd International Workshop on Multimedia Signal Processing (MMSP), IEEE_. Tampere, Finland. Sep 2020
 
 * Susanna Schwarzmann, Nick Hainke, Thomas Zinner, Christian Sieber,  Werner Robitza and Alexander Raake. **"Comparing fixed and variable segment durations for adaptive video streaming: a holistic analysis."** _Proceedings of the 11th ACM Multimedia Systems Conference_. 2020. [[url]](https://dl.acm.org/doi/abs/10.1145/3339825.3391858)
 
