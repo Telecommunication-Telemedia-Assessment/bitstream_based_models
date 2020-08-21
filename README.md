@@ -51,10 +51,6 @@ It is described in [(Robitza et al., ACM MMSys 2018)](https://www.researchgate.n
 ### Open Dataset
 An [open dataset](https://github.com/itu-p1203/open-dataset) was created for the ITU-T P.1203 model, which contains training and validation databases from the standardization procedure. The database is described in [(Robitza et al., ACM MMSys 2018)](https://www.researchgate.net/publication/325780595_HTTP_adaptive_streaming_QoE_estimation_with_ITU-T_rec_P_1203_open_databases_and_software) together with the open-source model implementation.
 
-### Technical Report
-
-We have compiled a [technical report](https://telecommunication-telemedia-assessment.github.io/bitstream_based_models/documents/tech-report-bitstream-models.pdf) detailing the model performance of the P.1203 series and P.1204.3 models on open datasets.
-
 ### Codec Extensions
 Moreover, to include the complementary video codecs H.265/MPEG-H HEVC and VP9, we developed a [codec extension](https://github.com/Telecommunication-Telemedia-Assessment/itu-p1203-codecextension) for the Mode 0 part of P.1203.
 
