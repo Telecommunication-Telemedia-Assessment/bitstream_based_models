@@ -53,7 +53,7 @@ An [open dataset](https://github.com/itu-p1203/open-dataset) was created for the
 
 ### Technical Report
 
-We have compiled a [technical report](https://telecommunication-telemedia-assessment.github.io/bitstream_based_models/documents/tech-report-bitstream-models.pdf) detailing the model performance of the P.1203 series and P.1204.3 models on open datasets.
+We have compiled a [technical report](https://github.com/Telecommunication-Telemedia-Assessment/bitstream_based_models/blob/master/documents/tech-report-bitstream-based-models.pdf) detailing the model performance of the P.1203 series and P.1204.3 models on open datasets.
 
 ### Codec Extensions
 Moreover, to include the complementary video codecs H.265/MPEG-H HEVC and VP9, we developed a [codec extension](https://github.com/Telecommunication-Telemedia-Assessment/itu-p1203-codecextension) for the Mode 0 part of P.1203.
