@@ -78,9 +78,25 @@ The Audiovisual Technology Group (AVT) deals with the function, application and 
 
 ## Publications
 
-### 2020
+### 2022
+* Robitza, Werner, Rakesh Rao Ramachandra-Rao, Steve Göring, Alexander Dethof, and Alexander Raake. **"Deploying the ITU-T P. 1203 QoE model in the wild and retraining for new codecs."** __In Proceedings of the 1st Mile-High Video Conference__, pp. 121-122 (2022). [[url]](https://dl.acm.org/doi/pdf/10.1145/3510450.3517310)
 
-* Rakesh Rao Ramachandra Rao, Steve Göring, Robert Steger, Saman Zadtootaghaj, Nabajeet Barman, Stephan Fremerey, Sebastian Möller and Alexander Raake. **“A Large-scale Evaluation of the bitstream-based video-quality model ITU-T P.1204.3 on Gaming Content.”** _22nd International Workshop on Multimedia Signal Processing (MMSP), IEEE_. Tampere, Finland. Sep 2020
+### 2021
+* Göring, Steve, Rakesh Rao Ramachandra Rao, Stephan Fremerey, and Alexander Raake. **"AVrate Voyager: an open source online testing platform."** __In 2021 IEEE 23rd International Workshop on Multimedia Signal Processing (MMSP)__, pp. 1-6. IEEE, 2021. [[url]](https://ieeexplore.ieee.org/iel7/9733399/9733432/09733561.pdf) 
+
+* Göring, Steve, Rakesh Rao Ramachandra Rao, Bernhard Feiten, and Alexander Raake. **"Modular framework and instances of pixel-based video quality models for UHD-1/4K."** __IEEE Access 9 (2021)__: 31842-31864. [[url]](https://ieeexplore.ieee.org/iel7/6287639/9312710/09355144.pdf)
+
+* Rao, Rakesh Rao Ramachandra, Steve Göring, and Alexander Raake. **"Towards High Resolution Video Quality Assessment in the Crowd."** __In 2021 13th International Conference on Quality of Multimedia Experience (QoMEX)__, pp. 1-6. IEEE, 2021. [[url]](https://ieeexplore.ieee.org/iel7/9465370/9465375/09465425.pdf)
+
+* Robitza, Werner, Rakesh Rao Ramachandra Rao, Steve Göring, and Alexer Raake. **"Impact of Spatial and Temporal Information on Video Quality and Compressibility."** __In 2021 13th International Conference on Quality of Multimedia Experience (QoMEX)__, pp. 65-68. IEEE, 2021. [[url]](https://ieeexplore.ieee.org/iel7/9465370/9465375/09465452.pdf)
+
+* Ramachandra Rao, Rakesh Rao, Steve Göring, and Alexander Raake. **"Enhancement of Pixel-based Video Quality Models using Meta-data."** __Electronic Imaging 2021, no. 9 (2021)__:. [[url]](https://www.ingentaconnect.com/content/ist/ei/2021/00002021/00000009/art00022?crawler=true&mimetype=application/pdf)
+
+
+### 2020
+* Raake, Alexander, Silvio Borer, Shahid M. Satti, Jörgen Gustafsson, Rakesh Rao Ramachandra Rao, Stefano Medagli, Peter List et al. **"Multi-model standard for bitstream-, pixel-based and hybrid video quality assessment of UHD/4K: ITU-T P. 1204."** __IEEE Access__ 8 (2020): 193020-193049. [[url]](https://ieeexplore.ieee.org/iel7/6287639/8948470/09234526.pdf)
+
+* Rakesh Rao Ramachandra Rao, Steve Göring, Robert Steger, Saman Zadtootaghaj, Nabajeet Barman, Stephan Fremerey, Sebastian Möller and Alexander Raake. **“A Large-scale Evaluation of the bitstream-based video-quality model ITU-T P.1204.3 on Gaming Content.”** _22nd International Workshop on Multimedia Signal Processing (MMSP), IEEE_. Tampere, Finland. Sep 2020. [[url]](https://ieeexplore.ieee.org/iel7/9287028/9287048/09287055.pdf)
 
 * Susanna Schwarzmann, Nick Hainke, Thomas Zinner, Christian Sieber,  Werner Robitza and Alexander Raake. **"Comparing fixed and variable segment durations for adaptive video streaming: a holistic analysis."** _Proceedings of the 11th ACM Multimedia Systems Conference_. 2020. [[url]](https://dl.acm.org/doi/abs/10.1145/3339825.3391858)
 
