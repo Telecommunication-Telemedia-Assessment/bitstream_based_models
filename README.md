@@ -66,6 +66,9 @@ Further, we performed analyses with other state-of-the-art video-quality metrics
 To run a subjective test, we use our test-tool [avrateNG](https://github.com/Telecommunication-Telemedia-Assessment/avrateNG).
 It is a video, image, and general multimedia rating system, based on a  web interface (server-client architecture).
 
+### AVrate Voyager
+To run an online/remote/crowd test for image/video/audio quality assessment, the developed [AVrate Voyager](https://github.com/Telecommunication-Telemedia-Assessment/AVrateVoyager) tool can be used.
+
 ### cencro
 [Cencro](https://github.com/Telecommunication-Telemedia-Assessment/cencro) is a center cropped variant of Netflix's VMAF (Video Multi-Method Assessment Fusion), that we used to compare our models during the development. With the center-cropping it can run significantly faster than the full-frame VMAF, with only slight decrease in prediction accuracy.
 
