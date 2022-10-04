@@ -82,6 +82,8 @@ The Audiovisual Technology Group (AVT) deals with the function, application and 
 ## Publications
 
 ### 2022
+* Ramachandra Rao, Rakesh Rao, Göring, Steve, and Raake, Alexander. "AVQBits-Adaptive Video Quality Model Based on Bitstream Information for Various Video Applications." IEEE Access. vol. 10. 2022. [[url]](https://ieeexplore.ieee.org/document/9846967)
+
 * Robitza, Werner, Rakesh Rao Ramachandra-Rao, Steve Göring, Alexander Dethof, and Alexander Raake. **"Deploying the ITU-T P. 1203 QoE model in the wild and retraining for new codecs."** __In Proceedings of the 1st Mile-High Video Conference__, pp. 121-122 (2022). [[url]](https://dl.acm.org/doi/pdf/10.1145/3510450.3517310)
 
 ### 2021
